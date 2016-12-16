@@ -1,0 +1,161 @@
+// #############################################################################
+// CSS Flexbox Practice
+// ｷﾀ━━ﾟ+.ヽ(≧▽≦)ﾉ.+ﾟ━━ ｯ !
+// #############################################################################
+
+$Greenery: #88b04b; // PANTONE 15-0343 TCX
+
+@mixin clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+img {
+  width: 200px;
+  height: 159px;
+}
+
+.border {
+  border: 1px solid #ccc;
+}
+
+.l-wrap {
+  @include clearfix;
+  margin-right: auto;
+  margin-left: auto;
+  // width: 1140px;
+  background: #f2f2f2;
+}
+
+.l-code-bg {
+  background: #f2f2f2;
+  margin: 4rem auto;
+  padding: 4rem 0;
+}
+
+.code {
+  @extend .l-wrap;
+
+  &:before {
+    content: 'css';
+    font-size: 1.8rem;
+  }
+
+  pre {
+    margin-bottom: 0;
+  }
+}
+
+.h300 {
+  height: 300px;
+}
+
+.column01 {
+  padding: 2rem;
+  text-align: center;
+  background: $Greenery;
+  h3 {
+    font-size: 3.2rem;
+  }
+}
+
+// align-items
+.flex-vertical-top {
+  display: flex;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+}
+
+.flex-vertical-middle {
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.flex-vertical-bottom {
+  display: flex;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+}
+
+.flex-vertical-baseline {
+  display: flex;
+  -webkit-align-items: baseline;
+          align-items: baseline;
+}
+
+.flex-vertical-stretch {
+  display: flex;
+  -webkit-align-items: stretch;
+          align-items: stretch;
+}
+
+// justify-content
+.flex-horizontal-left {
+  display: flex;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+
+.flex-horizontal-center {
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+.flex-horizontal-right {
+  display: flex;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+
+.flex-horizontal-space-between {
+  display: flex;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+
+.flex-horizontal-space-around {
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+
+.flex-vertical-horizontal-center {
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+
+// align-self
+.align-self-center {
+  -webkit-align-self: center;
+          align-self: center;
+}
+
+.align-self-bottom {
+  -webkit-align-self: flex-end;
+          align-self: flex-end;
+}
+
+// align-content
+.align-content-space-around {
+  display: flex;
+  -webkit-align-content: space-around;
+          align-content: space-around;
+}
+
+// flex-wrap プロパティで折り返しを指定
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.h500 {
+  height: 500px;
+}

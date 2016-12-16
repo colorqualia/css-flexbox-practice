@@ -1,0 +1,377 @@
+extends layout/default
+
+block content
+  .container
+    h1 CSS Flexbox Practice
+    p Flexible Box Layout Module
+    h2
+      code align-items
+    p 縦方向の配置
+      br
+      | flex-start / center / flex-end / baseline / stretch
+      br
+      | 初期値は
+      code
+        | stretch
+
+  section
+    .container
+      h2 flexbox vertical top
+      .l-wrap
+        .border.h300.flex-vertical-top
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-vertical-top {
+            |    display: flex;
+            |    -webkit-align-items: flex-start;
+            |            align-items: flex-start;
+            | }
+
+  section
+    .container
+      h2 flexbox vertical middle
+      .l-wrap
+        .border.h300.flex-vertical-middle
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-vertical-middle {
+            |    display: flex;
+            |    -webkit-align-items: center;
+            |            align-items: center;
+            | }
+
+  section
+    .container
+      h2 flexbox vertical bottom
+      .l-wrap
+        .border.h300.flex-vertical-bottom
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-vertical-bottom {
+            |    display: flex;
+            |    -webkit-align-items: flex-end;
+            |            align-items: flex-end;
+            | }
+
+  section
+    .container
+      h2 flexbox vertical baseline
+      .l-wrap
+        .border.h300.flex-vertical-baseline
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            h3 Mario Star
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+            h4 Mario Star
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-vertical-baseline {
+            |    display: flex;
+            |    -webkit-align-items: baseline;
+            |            align-items: baseline;
+            | }
+
+  section
+    .container
+      h2 flexbox vertical stretch
+      .l-wrap
+        .border.h300.flex-vertical-stretch
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            h3 Mario Star
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+            h4 Mario Star
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-vertical-stretch {
+            |    display: flex;
+            |    -webkit-align-items: stretch;
+            |            align-items: stretch;
+            | }
+
+  .container
+    h2
+      code justify-content
+    p 横方向の配置
+      br
+      | flex-start / center / flex-end / space-between / space-around
+      br
+      | 初期値は
+      code
+        | flex-start
+
+  section
+    .container
+      h2 flexbox horizontal left
+      .l-wrap
+        .border.h300.flex-horizontal-left
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-horizontal-left {
+            |    display: flex;
+            |    -webkit-justify-content: flex-start;
+            |            justify-content: flex-start;
+            | }
+
+  section
+    .container
+      h2 flexbox horizontal center
+      .l-wrap
+        .border.h300.flex-horizontal-center
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-horizontal-center {
+            |    display: flex;
+            |    -webkit-justify-content: center;
+            |            justify-content: center;
+            | }
+
+  section
+    .container
+      h2 flexbox horizontal right
+      .l-wrap
+        .border.h300.flex-horizontal-right
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-horizontal-right {
+            |    display: flex;
+            |    -webkit-justify-content: flex-end;
+            |            justify-content: flex-end;
+            | }
+
+  section
+    .container
+      h2 flexbox horizontal space between
+      p
+        code
+          | space-between
+        | 両端揃え(フレックスアイテムの間に余白挿入)
+      .l-wrap
+        .border.h300.flex-horizontal-space-between
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-horizontal-space-between {
+            |    display: flex;
+            |    -webkit-justify-content: space-between;
+            |            justify-content: space-between;
+            | }
+
+  section
+    .container
+      h2 flexbox horizontal space around
+      p
+        code
+          | space-around
+        | 両端揃え(フレックスアイテムの左右に余白挿入)
+      .l-wrap
+        .border.h300.flex-horizontal-space-around
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-horizontal-space-around {
+            |    display: flex;
+            |    -webkit-justify-content: space-around;
+            |            justify-content: space-around;
+            | }
+
+  section
+    .container
+      h2 flexbox vertical horizontal center
+      .l-wrap
+        .border.h300.flex-vertical-horizontal-center
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .flex-vertical-horizontal-center {
+            |    display: flex;
+            |    -webkit-align-items: center;
+            |            align-items: center;
+            |    -webkit-justify-content: center;
+            |            justify-content: center;
+            | }
+
+  .container
+    h2
+      code align-self
+    p フレックスアイテムの縦方向の配置
+      br
+      | flex-start / center / flex-end / baseline / stretch / auto
+      br
+      | 初期値は
+      code
+        | auto
+      | でalign-itemsプロパティの値に従う
+
+  section
+    .container
+      h2 flexbox align self
+      .l-wrap
+        .border.h300.flex-vertical-top
+          .column01.align-self-center
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            h3 Mario Star
+          .column01.align-self-bottom
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .align-self-center {
+            |    -webkit-align-self: center;
+            |            align-self: center;
+            | }
+            | 
+            | .align-self-bottom {
+            |    -webkit-align-self: flex-end;
+            |            align-self: flex-end;
+            | }
+
+  .container
+    h2
+      code align-content
+    p 複数行の縦方向の配置
+      br
+      | flex-start / center / flex-end / space-between / space-around / stretch
+      br
+      | 初期値は
+      code
+        | stretch
+      br
+      code
+        | space-between
+      | 両端揃え(フレックスアイテムの間に余白挿入)
+      br
+      code
+        | space-around
+      | 両端揃え(フレックスアイテムの上下に余白挿入)
+
+  section
+    .container
+      h2 flexbox align content
+      .l-wrap
+        .border.h500.flex-wrap.align-content-space-around
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            h3 Mario Star
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+          .column01
+            h3 Mario Star
+          .column01
+            h3 Mario Star
+          .column01
+            img(src='images/mario-stars.png', alt='mario star')
+      // .l-wrap
+
+    .l-code-bg
+      .container
+        .code
+          pre
+            | .align-content-space-around {
+            |    -webkit-align-content: space-around;
+            |            align-content: space-around;
+            | }

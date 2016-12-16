@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>CSS Flexbox practice</title>
+    <!-- CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Flexbox Practice</h1>
+      <p>Flexible Box Layout Module</p>
+      <h2><code>align-items</code></h2>
+      <p>縦方向の配置<br>flex-start / center / flex-end / baseline / stretch<br>初期値は<code>stretch</code></p>
+    </div>
+    <section>
+      <div class="container">
+        <h2>flexbox vertical top</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-vertical-top">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-vertical-top {
+   display: flex;
+   -webkit-align-items: flex-start;
+           align-items: flex-start;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox vertical middle</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-vertical-middle">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-vertical-middle {
+   display: flex;
+   -webkit-align-items: center;
+           align-items: center;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox vertical bottom</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-vertical-bottom">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-vertical-bottom {
+   display: flex;
+   -webkit-align-items: flex-end;
+           align-items: flex-end;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox vertical baseline</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-vertical-baseline">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01">
+              <h3>Mario Star</h3>
+            </div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star">
+              <h4>Mario Star</h4>
+            </div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-vertical-baseline {
+   display: flex;
+   -webkit-align-items: baseline;
+           align-items: baseline;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox vertical stretch</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-vertical-stretch">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01">
+              <h3>Mario Star</h3>
+            </div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star">
+              <h4>Mario Star</h4>
+            </div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-vertical-stretch {
+   display: flex;
+   -webkit-align-items: stretch;
+           align-items: stretch;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <h2><code>justify-content</code></h2>
+      <p>横方向の配置<br>flex-start / center / flex-end / space-between / space-around<br>初期値は<code>flex-start</code></p>
+    </div>
+    <section>
+      <div class="container">
+        <h2>flexbox horizontal left</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-horizontal-left">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-horizontal-left {
+   display: flex;
+   -webkit-justify-content: flex-start;
+           justify-content: flex-start;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox horizontal center</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-horizontal-center">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-horizontal-center {
+   display: flex;
+   -webkit-justify-content: center;
+           justify-content: center;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox horizontal right</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-horizontal-right">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-horizontal-right {
+   display: flex;
+   -webkit-justify-content: flex-end;
+           justify-content: flex-end;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox horizontal space between</h2>
+        <p><code>space-between</code>両端揃え(フレックスアイテムの間に余白挿入)</p>
+        <div class="l-wrap">
+          <div class="border h300 flex-horizontal-space-between">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-horizontal-space-between {
+   display: flex;
+   -webkit-justify-content: space-between;
+           justify-content: space-between;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox horizontal space around</h2>
+        <p><code>space-around</code>両端揃え(フレックスアイテムの左右に余白挿入)</p>
+        <div class="l-wrap">
+          <div class="border h300 flex-horizontal-space-around">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-horizontal-space-around {
+   display: flex;
+   -webkit-justify-content: space-around;
+           justify-content: space-around;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>flexbox vertical horizontal center</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-vertical-horizontal-center">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.flex-vertical-horizontal-center {
+   display: flex;
+   -webkit-align-items: center;
+           align-items: center;
+   -webkit-justify-content: center;
+           justify-content: center;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <h2><code>align-self</code></h2>
+      <p>フレックスアイテムの縦方向の配置<br>flex-start / center / flex-end / baseline / stretch / auto<br>初期値は<code>auto</code>でalign-itemsプロパティの値に従う</p>
+    </div>
+    <section>
+      <div class="container">
+        <h2>flexbox align self</h2>
+        <div class="l-wrap">
+          <div class="border h300 flex-vertical-top">
+            <div class="column01 align-self-center"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01">
+              <h3>Mario Star</h3>
+            </div>
+            <div class="column01 align-self-bottom"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.align-self-center {
+   -webkit-align-self: center;
+           align-self: center;
+}
+ 
+.align-self-bottom {
+   -webkit-align-self: flex-end;
+           align-self: flex-end;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <h2><code>align-content</code></h2>
+      <p>複数行の縦方向の配置<br>flex-start / center / flex-end / space-between / space-around / stretch<br>初期値は<code>stretch</code><br><code>space-between</code>両端揃え(フレックスアイテムの間に余白挿入)<br><code>space-around</code>両端揃え(フレックスアイテムの上下に余白挿入)</p>
+    </div>
+    <section>
+      <div class="container">
+        <h2>flexbox align content</h2>
+        <div class="l-wrap">
+          <div class="border h500 flex-wrap align-content-space-around">
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01">
+              <h3>Mario Star</h3>
+            </div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+            <div class="column01">
+              <h3>Mario Star</h3>
+            </div>
+            <div class="column01">
+              <h3>Mario Star</h3>
+            </div>
+            <div class="column01"><img src="images/mario-stars.png" alt="mario star"></div>
+          </div>
+        </div>
+        <!-- .l-wrap-->
+      </div>
+      <div class="l-code-bg">
+        <div class="container">
+          <div class="code">
+            <pre>.align-content-space-around {
+   -webkit-align-content: space-around;
+           align-content: space-around;
+}</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
